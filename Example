@@ -1,0 +1,9 @@
+//JCrux By Example
+
+
+JCrux jCrux = new JCrux();
+jCrux.connect("localhost", "container", "myjava123");
+String id = jCrux.setInstance("j2os");
+System.out.println(id);
+String output = (String) jCrux.invokeMethod(id,"toUpperCase");
+System.out.println(output);
